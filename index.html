@@ -28,9 +28,142 @@
 </section></div>
 <div id="overlay" class="overlay hidden"><div id="overlayBox" class="overlay-box"><h2 id="overlayTitle"></h2></div></div>
 <script>
-const QUESTIONS={"1":[{"q":"Hurry up or we'll be late! I'll be ready ( ) two minutes.","choices":["after","by","for","in"],"answer":3},{"q":"I have known him ( ) more than twenty years.","choices":["before","since","for","while"],"answer":2},{"q":"It is necessary for all of us to be back ( ) six o'clock.","choices":["since","till","by","in"],"answer":2},{"q":"Study very hard, ( ) you will be sorry.","choices":["so","or","and","nor"],"answer":1},{"q":"No one would help me, so I had to do the work by ( ).","choices":["alone","me","myself","oneself"],"answer":2},{"q":"Would you like ( ) cup of coffee?","choices":["other","another","an","the others"],"answer":1},{"q":"He left the room without saying a word to ( ).","choices":["anyone","nobody","someone","no one"],"answer":0},{"q":"I have been living in Tokyo ( ) 2010.","choices":["for","since","from","during"],"answer":1},{"q":"He is tall, ( ) his brother is short.","choices":["but","so","or","for"],"answer":0},{"q":" She goes to school ( ) bus every morning.","choices":["on","by","with","in"],"answer":1},{"q":"My father gave ( ) a nice birthday present.","choices":["I","my","me","mine"],"answer":2},{"q":"Look at ( ) dog over there. It's so cute!","choices":["this","that","these","those"],"answer":1},{"q":"We stayed at home because ( ) was raining.","choices":["it","this","that","weather"],"answer":0},{"q":"There are many books ( ) the table.","choices":["in","on","at","to"],"answer":1},{"q":" I don't have ( ) money in my wallet.","choices":["some","any","many","few"],"answer":1},{"q":"This cake is ( ) than that one.","choices":["sweet","sweeter","sweetest","more sweet"],"answer":1},{"q":"What time do you usually ( ) dressed in the morning?","choices":["get","take","put","make"],"answer":0},{"q":"Ken can speak English very ( ).","choices":["good","well","nice","fluent"],"answer":1},{"q":"Do you have ( ) plans for this weekend?","choices":["some","any","much","little"],"answer":1},{"q":" The sun ( ) in the east.","choices":["rises","raises","rising","rose"],"answer":0},{"q":"My sister is playing ( ) piano in her room.","choices":["a","an","the","―"],"answer":2},{"q":"I am interested ( ) learning Japanese history.","choices":["on","at","in","for"],"answer":2},{"q":"Please ( ) off your shoes before entering.","choices":["take","put","get","make"],"answer":0},{"q":"They have ( ) to London twice.","choices":["been","gone","went","visit"],"answer":0},{"q":"This is the hospital ( ) I was born.","choices":["which","where","that","when"],"answer":1},{"q":"If it ( ) tomorrow, we will stay home.","choices":["rains","will rain","rained","raining"],"answer":0},{"q":"She ( ) to the library to study yesterday.","choices":["go","goes","went","has gone"],"answer":2},{"q":"I must finish my homework ( ) dinner.","choices":["before","after","while","until"],"answer":0},{"q":"He walked ( ) the finish line carefully.","choices":["across","under","beside","against"],"answer":0},{"q":" We didn't have ( ) time to catch the train.","choices":["enough","many","few","large"],"answer":0}],"2":[{"q":"The marketing department will be busy ( ) next month.","choices":["by","while","when","until"],"answer":3},{"q":"Are you ( ) or against the plan?","choices":["at","by","for","with"],"answer":2},{"q":"The children have ( ) lots of new friends since we moved.","choices":["built","made","become","found"],"answer":1},{"q":"The landlord ( ) him about 90,000 yen per month in rent.","choices":["costs","charges","takes","pays"],"answer":1},{"q":"I'm afraid I lost my wallet. Could you ( ) me some money?","choices":["borrow","rent","owe","lend"],"answer":3},{"q":"Jim has three brothers. One is a doctor, and ( ) are computer scientists.","choices":["another","others","the other","the others"],"answer":3},{"q":"Martha and I didn't know the time because ( ) had a watch.","choices":["each of us","both of us","either of us","neither of us"],"answer":3},{"q":"Hiroshi has three sons, but ( ) of them live in Japan.","choices":["few","one","neither","none"],"answer":3},{"q":"Thanks ( ) her kind advice, he succeeded in passing the exam.","choices":["for","to","of","with"],"answer":1},{"q":"The bus was delayed ( ) a severe snowstorm.","choices":["because","despite of","owing to","instead of"],"answer":2},{"q":"You can smoke in here as ( ) as you leave the window open.","choices":["far","long","much","well"],"answer":1},{"q":"Take a map with you in ( ) you get lost.","choices":["that","case","so","if"],"answer":1},{"q":"How much is your bus ( ) home?","choices":["fare","fee","cost","price"],"answer":0},{"q":"I have an ( ) with the dentist this afternoon.","choices":["appointment","reservation","promise","order"],"answer":0},{"q":"We had the school picnic ( ) the rain.","choices":["even though","instead of","in spite of","while"],"answer":2},{"q":"John came to see you ( ) you were out to lunch.","choices":["for","during","among","while"],"answer":3},{"q":"You will become ill ( ) you stop working so hard.","choices":["if","until","when","unless"],"answer":3},{"q":"He asked me to ( ) him the way to the station.","choices":["show","teach","speak","say"],"answer":0},{"q":"Lunch is on me today. I'll ( ) you next time.","choices":["borrow","charge","deal","treat"],"answer":3},{"q":"He got into the ( ) of biting his nails.","choices":["habit","manner","custom","practice"],"answer":0},{"q":"The news ( ) her son survived surprised us all.","choices":["about","of","that","which"],"answer":2},{"q":"We are supposed to ( ) a party next Saturday.","choices":["halt","hold","quit","play"],"answer":1},{"q":"When did World War Two ( )?","choices":["begin","continue","end","produce"],"answer":0},{"q":"He refused to look me in ( ) face.","choices":["the","a","his","―"],"answer":0},{"q":"More than twenty ( ) were injured in the train accident.","choices":["clients","customers","guests","passengers"],"answer":3},{"q":"My brother chose a blue Frisbee, and I chose a red ( ).","choices":["one","it","that","frisbee"],"answer":0},{"q":"Yesterday quite a ( ) students were absent due to flu.","choices":["few","little","small","much"],"answer":0},{"q":"She was so tired that she fell asleep ( ) the light on.","choices":["in","by","with","for"],"answer":2},{"q":"As I was talking with Susan, an idea ( ) to me.","choices":["appeared","happened","occurred","seemed"],"answer":2},{"q":"Your composition is good, ( ) a few spelling mistakes.","choices":["besides","provided for","except for","without"],"answer":2}],"3":[{"q":"Tom visited the park for the first time ( ) many years.","choices":["since","during","through","in"],"answer":3},{"q":"A knowledge of science is ( ) great use to everyone.","choices":["at","for","of","with"],"answer":2},{"q":"He was ( ) himself with joy to hear the news.","choices":["over","besides","beside","beyond"],"answer":2},{"q":"Frank looks young ( ) his age, doesn't he?","choices":["in","with","for","to"],"answer":2},{"q":"The mother caught her child ( ) the arm.","choices":["with","by","on","at"],"answer":1},{"q":"I decided to order the book ( ) the publisher directly.","choices":["from","to","for","by"],"answer":0},{"q":"There is no doubt ( ) his honesty.","choices":["according as","as to","different from","up to"],"answer":1},{"q":"Two feet of snow fell yesterday, ( ) the school was canceled.","choices":["so","although","unless","while"],"answer":0},{"q":"We will have finished the work ( ) the time you get here.","choices":["by","for","from","till"],"answer":0},{"q":"Bill ate ( ) a big lunch that he fell asleep in class.","choices":["so","very","such","enough"],"answer":2},{"q":"Every ( ) I go shopping, I forget to buy one or two items.","choices":["Sometimes","All the time","time","As time goes by"],"answer":2},{"q":"Let me give you a ( ) of advice.","choices":["some","pair","sheet","piece"],"answer":3},{"q":"This painting stands a good ( ) of winning the prize.","choices":["certainty","chance","opportunity","possible"],"answer":1},{"q":"Could you possibly make ( ) for my grandmother to sit here?","choices":["a room","room","rooms","the room"],"answer":1},{"q":"I have no sense of ( ), so I got lost easily.","choices":["course","direction","way","track"],"answer":1},{"q":"I have nothing to do at ( ).","choices":["now","current","present","moment"],"answer":2},{"q":"How much sugar would you like in your coffee? Two ( ), please.","choices":["lumps","slices","leaves","pieces"],"answer":0},{"q":"He has a pleasant voice, but it doesn't ( ) good through a mic.","choices":["hear","listen","sound","come"],"answer":2},{"q":"The boys ran outside ( ) big smiles on their faces.","choices":["with","on","in","having"],"answer":0},{"q":"In ( ) of an earthquake, do not rush outside.","choices":["event","case","fact","cause"],"answer":1},{"q":"I've never seen ( ) a beautiful baby before.","choices":["so","such","very","too"],"answer":1},{"q":"Neither of my alarm clocks ( ) off this morning.","choices":["went","rang","sounded","played"],"answer":0},{"q":"I don't understand ( ) Mary made such a big mistake.","choices":["how","why","what","that"],"answer":1},{"q":"He succeeded in solving the problem ( ) ease.","choices":["with","in","by","at"],"answer":0},{"q":"She was at a ( ) for words when she heard the news.","choices":["loss","cost","missing","lack"],"answer":0},{"q":"The meeting will be held ( ) advance of the conference.","choices":["on","in","for","by"],"answer":1},{"q":"He is, so to ( ), a walking dictionary.","choices":["speak","say","tell","talk"],"answer":1},{"q":"You should take advantage ( ) this great opportunity.","choices":["of","on","with","for"],"answer":0},{"q":"He made a point ( ) taking a walk every morning.","choices":["to","of","in","for"],"answer":1},{"q":"She insisted ( ) paying for the dinner herself.","choices":["on","in","at","for"],"answer":0}],"4":[{"q":"( ) my stay in Seattle, I made a lot of life-long friends.","choices":["During","Though","While","With"],"answer":0},{"q":"Robert is not ( ) great a singer as he thinks he is.","choices":["too","as","a","more"],"answer":1},{"q":"Peter thinks that this is quite ( ) cheap restaurant.","choices":["an","a","the","that"],"answer":1},{"q":"His point of view is quite different from ( ).","choices":["mine","me","my","I"],"answer":0},{"q":"Bob won the baseball match, but failed in the speech ( ) he had prepared for.","choices":["match","contest","practice","training"],"answer":1},{"q":"Aside ( ) a few minor mistakes, this is a very good paper.","choices":["from","of","with","by"],"answer":0},{"q":"His essay is far ( ) perfect.","choices":["from","off","away","out"],"answer":0},{"q":"On ( ) the news, she jumped for joy.","choices":["hearing","heard","hear","to hear"],"answer":0},{"q":"My elder brother was born ( ) November 18, 1980.","choices":["in","on","at","by"],"answer":1},{"q":"Please leave your chair as it ( ).","choices":["is","was","does","be"],"answer":0},{"q":"We cannot agree with the idea that might ( ) right.","choices":["makes","becomes","looks","feels"],"answer":0},{"q":"Most people do not appreciate what they have ( ) they lose it.","choices":["until","since","while","unless"],"answer":0},{"q":"Hardly had I left home ( ) it began to rain heavily.","choices":["when","than","after","then"],"answer":0},{"q":"No sooner had he seen the police officer ( ) he ran away.","choices":["than","when","then","after"],"answer":0},{"q":"Scarcely had the movie started ( ) the power went out.","choices":["before","than","then","that"],"answer":0},{"q":"Little ( ) I dream that I would meet her again in Paris.","choices":["did","had","do","have"],"answer":0},{"q":"So exhausted was he ( ) he collapsed onto the bed.","choices":["that","as","which","so"],"answer":0},{"q":"Were it not ( ) your help, I could not complete this task.","choices":["for","with","without","by"],"answer":0},{"q":"Had it not been for the rain, we ( ) played the game.","choices":["would have","will have","have","had"],"answer":0},{"q":"It is high time you ( ) to bed.","choices":["went","go","have gone","will go"],"answer":0},{"q":"Whatever ( ) happen, I will always support you.","choices":["may","can","will","must"],"answer":0},{"q":"Strange ( ) it may seem, what he said is true.","choices":["as","because","if","when"],"answer":0},{"q":"Young ( ) he was, he managed to solve the problem.","choices":["as","because","since","if"],"answer":0},{"q":"Rich ( ) he is, he is far from happy.","choices":["as","because","since","if"],"answer":0},{"q":"Much ( ) I respect him, I cannot agree with his opinion.","choices":["as","that","how","what"],"answer":0},{"q":"He worked hard to the ( ) that he ruined his health.","choices":["extent","reason","purpose","cause"],"answer":0},{"q":"She had no alternative ( ) to accept the offer.","choices":["but","instead","because","although"],"answer":0},{"q":"He went so ( ) as to say that I was a liar.","choices":["far","much","long","well"],"answer":0},{"q":"It goes without ( ) that health is above wealth.","choices":["saying","speak","said","talk"],"answer":0},{"q":"There is no ( ) what will happen tomorrow.","choices":["telling","to tell","told","tell"],"answer":0}]};
+const QUESTIONS = {
+  "1": [
+    {"q":"Kevin's new apartment is ( ) larger than mine.","choices":["more","very","so","much"],"answer":3},
+    {"q":"Nothing is ( ) delicious as my grandmother's apple pie.","choices":["as","far","very","much"],"answer":0},
+    {"q":"Meg can read twice as fast ( ) Lily.","choices":["so","by","as","during"],"answer":2},
+    {"q":"The boy ( ) next to the window is my brother.","choices":["sits","sat","sitting","is sitting"],"answer":2},
+    {"q":"( ) my backpack, I found my textbook missing.","choices":["Opening","To open","Opened","Open"],"answer":0},
+    {"q":"David looks young, but he is three years senior ( ) me.","choices":["in","from","of","to"],"answer":3},
+    {"q":"The accident was caused by someone ( ) too fast.","choices":["driven","driving","drove","to drive"],"answer":1},
+    {"q":"The history books this year are like the books ( ) last year.","choices":["to use","use","using","used"],"answer":3},
+    {"q":"I found myself ( ) on the bench in the park.","choices":["lay","lied","lying","to lie"],"answer":2},
+    {"q":"Tom stood on the beach ( ) out over the ocean.","choices":["look","looking","looked","by looking"],"answer":1}
+  ],
+  "2": [
+    {"q":"Kazu speaks Italian better than ( ) in his class.","choices":["other boy","another boys","any other boy","any other boys"],"answer":2},
+    {"q":"Martha and Catherine are sisters. Martha is the ( ) of the two.","choices":["big","bigger","biggest","more big"],"answer":1},
+    {"q":"The new swimming pool is not as large as the old one, but it is ( ) deeper.","choices":["a lot of","very","more","much"],"answer":3},
+    {"q":"The more he studied, ( ) he became.","choices":["the clever","the cleverer","the more cleverer","the cleverest"],"answer":1},
+    {"q":"The population of San Francisco is larger than ( ) of Kanazawa.","choices":["it","those","one","that"],"answer":3},
+    {"q":"I don't know who painted the picture since I'm not familiar ( ) modern art.","choices":["to","with","of","from"],"answer":1},
+    {"q":"We are ( ) milk. Will you buy some?","choices":["want","need of","insufficient","short of"],"answer":3},
+    {"q":"The plane ( ) arrive at 9:30 but it was delayed for two hours.","choices":["was able to","was supposed to","should have","expected to"],"answer":1},
+    {"q":"I was ( ) of doing the same thing everyday.","choices":["tire","tires","tiring","tired"],"answer":3},
+    {"q":"I was accustomed to ( ) speeches in public when I was young.","choices":["be made","made","make","making"],"answer":3},
+    {"q":"The spaghetti Jack made was so good that there was little ( ) on the plate.","choices":["leave","left","to have left","leaving"],"answer":1},
+    {"q":"He listened to the music with ( ).","choices":["closing his eyes","his eyes closed","his eyes closing","his close eyes"],"answer":1},
+    {"q":"The treasure remains ( ) somewhere on the island.","choices":["buried","bury","burying","to bury"],"answer":0},
+    {"q":"With his shoulder ( ), Tom could not take part in the football game.","choices":["to be injured","to injure","injuring","injured"],"answer":3},
+    {"q":"I saw my sister ( ) by her teacher.","choices":["scold","scolding","scolded","having scolded"],"answer":2}
+  ],
+  "3": [
+    {"q":"The highest mountain in Peru is ( ) Mt. Fuji.","choices":["twice as nearly high as","nearly twice as high as","as nearly twice high as","nearly high as twice as"],"answer":1},
+    {"q":"Look at this computer. This model is far ( ) to the previous one.","choices":["like","better","superior","best"],"answer":2},
+    {"q":"The mountain climbers were expected to return, but when they did not, the rest of the party began to be ( ) about their safety.","choices":["feared","careful","anxious","frightening"],"answer":2},
+    {"q":"The student was ashamed of being ( ) to get his degree.","choices":["incapable","impossible","imperfect","unable"],"answer":3},
+    {"q":"We are all ( ) up with his complaints about his boss.","choices":["put","fed","sick","tired"],"answer":1},
+    {"q":"( ) from here, Mt. Fuji is very beautiful.","choices":["Seeing","Seen","To see","In seeing"],"answer":1},
+    {"q":"The boxer, ( ) he had no chance of winning, refused the challenge.","choices":["by fearing","feared","fearing","to fear"],"answer":2},
+    {"q":"John, ( ) of the earthquake, couldn't say a word.","choices":["shock at the news","shocking to the news","shocked at the news","having shocked by the news"],"answer":2},
+    {"q":"( ) Sunday, the bank was closed.","choices":["Being","Being it","It being","It was"],"answer":2},
+    {"q":"Not wisely ( ), television can do us harm.","choices":["use","used","using","to be used"],"answer":1},
+    {"q":"( ) with his brother, he is not so generous.","choices":["To compare","In comparing","Comparing","Compared"],"answer":3},
+    {"q":"All things ( ), he did a very good job.","choices":["considered","considering","to consider","in consideration"],"answer":0},
+    {"q":"( ) in plain English, the book is suitable for beginners.","choices":["Writing","Written","To write","Having written"],"answer":1},
+    {"q":"( ) his age, Mr. Brown looks very young.","choices":["Considering","Considered","Consider","To consider"],"answer":0},
+    {"q":"I'm sorry to have kept you ( ) for so long.","choices":["wait","waited","waiting","to wait"],"answer":2}
+  ],
+  "4": [
+    {"q":"He knows little of mathematics, ( ) of physics.","choices":["still more","much less","as well","no less than"],"answer":1},
+    {"q":"The price of a personal computer has dropped by ( ) 30% in a year.","choices":["no less than","no more than","not less than","not more than"],"answer":0},
+    {"q":"I love him all the ( ) for his faults.","choices":["good","better","best","well"],"answer":1},
+    {"q":"( ) in London for eleven years, Yuji speaks British English very well.","choices":["Being living","Having lived","Having been lived","Been living"],"answer":1},
+    {"q":"( ) him before, I didn't recognize him.","choices":["Seeing not","Seen","Never having seen","Having not to see"],"answer":2},
+    {"q":"( ) for ten years in Kobe, Jack speaks Japanese as if he were a native.","choices":["Lived","Living","Having lived","To live"],"answer":2},
+    {"q":"Shall we go on a picnic tomorrow morning, weather ( )?","choices":["permit","permits","permitting","permitted"],"answer":2},
+    {"q":"He has ( ) 500 dollars with him, so he can barely buy this cheap bicycle.","choices":["no more than","no less than","not less than","as much as"],"answer":0},
+    {"q":"She is ( ) intelligent than her brother; both of them are true geniuses.","choices":["no less","no more","not less","not more"],"answer":0},
+    {"q":"He spent ( ) 50 dollars on lunch, which was surprisingly cheap for a steak house.","choices":["no less than","no more than","not less than","not more than"],"answer":3},
+    {"q":"The candidate has ( ) 10,000 supporters, which is the absolute minimum needed to enter the race.","choices":["no less than","no more than","not less than","not more than"],"answer":2},
+    {"q":"There were ( ) fifty passengers injured in the train accident.","choices":["no less than","no more than","not less than","not more than"],"answer":0},
+    {"q":"( ) night coming on, we decided to look for a hotel.","choices":["With","For","As","By"],"answer":0},
+    {"q":"( ) that he was innocent, the judge released the prisoner at once.","choices":["Convinced","Convincing","To convince","Having convinced"],"answer":0},
+    {"q":"Frankly ( ), I don't agree with your opinion on this matter.","choices":["speaking","spoken","to speak","speak"],"answer":0},
+    {"q":"( ) from his accent, he must be from the northern part of the country.","choices":["Judging","Judged","To judge","Judges"],"answer":0},
+    {"q":"Other things being ( ), the simplest explanation is usually the best.","choices":["equal","equaled","equally","equaling"],"answer":0}
+  ]
+};
 const POINTS={1:100,2:200,3:400,4:800},KEY="englishChallengeWrongQuestions_v1";
-const TRANSLATIONS={"1":["急いで。そうしないと遅れます！私は2分以内に準備ができます。","私は20年以上彼を知っています。","私たち全員が6時までに戻ってくる必要があります。","一生懸命勉強しなさい。そうしないと後悔しますよ。","誰も私を助けてくれなかったので、私は一人でその仕事をしなければなりませんでした。","コーヒーをもう一杯いかがですか。","彼は誰にも一言も言わずに部屋を出ていきました。","私は2010年から東京に住んでいます。","彼は背が高いですが、彼の兄弟は背が低いです。","彼女は毎朝バスで学校へ行きます。","父は私に素敵な誕生日プレゼントをくれました。","あそこにいるあの犬を見て。とてもかわいい！","雨が降っていたので、私たちは家にいました。","テーブルの上にたくさんの本があります。","財布の中にお金がまったくありません。","このケーキはあのケーキより甘いです。","あなたは普段、朝何時に着替えますか。","ケンはとても上手に英語を話せます。","今週末、何か予定がありますか。","太陽は東から昇ります。","私の姉は部屋でピアノを弾いています。","私は日本史を学ぶことに興味があります。","入る前に靴を脱いでください。","彼らはロンドンへ2回行ったことがあります。","ここは私が生まれた病院です。","明日雨が降れば、私たちは家にいます。","彼女は昨日、勉強するために図書館へ行きました。","夕食前に宿題を終えなければなりません。","彼は注意深くゴールラインを横切って歩きました。","私たちには列車に間に合うだけの時間がありませんでした。"],"2":["マーケティング部は来月まで忙しいでしょう。","あなたはその計画に賛成ですか、それとも反対ですか。","引っ越して以来、子どもたちはたくさんの新しい友達を作りました。","大家は彼に家賃として月9万円ほど請求しています。","財布をなくしてしまったようです。お金を少し貸してもらえますか。","ジムには3人の兄弟がいます。1人は医者で、残りの2人はコンピューター科学者です。","マーサと私は、どちらも腕時計を持っていなかったので時間が分かりませんでした。","ヒロシには3人の息子がいますが、日本に住んでいる人は一人もいません。","彼女の親切な助言のおかげで、彼は試験に合格することができました。","激しい吹雪のため、バスは遅れました。","窓を開けたままにしておく限り、ここでたばこを吸ってもかまいません。","道に迷った場合に備えて、地図を持っていきなさい。","家までのバス運賃はいくらですか。","今日の午後、歯医者の予約があります。","雨にもかかわらず、私たちは学校の遠足をしました。","あなたが昼食に出ている間に、ジョンが会いに来ました。","こんなに一生懸命働くのをやめないと、病気になりますよ。","彼は私に駅への行き方を教えてくれるよう頼みました。","今日は私のおごりです。次回はあなたにごちそうします。","彼は爪をかむ癖がつきました。","彼女の息子が生き残ったという知らせは、私たち全員を驚かせました。","私たちは来週の土曜日にパーティーを開くことになっています。","第二次世界大戦はいつ始まりましたか。","彼は私の顔をまともに見ようとしませんでした。","列車事故で20人以上の乗客が負傷しました。","兄は青いフリスビーを選び、私は赤いものを選びました。","昨日、インフルエンザのためかなりの数の生徒が欠席しました。","彼女はとても疲れていたので、明かりをつけたまま眠ってしまいました。","スーザンと話していると、ある考えが私の頭に浮かびました。","あなたの作文は、いくつかつづりの間違いがあることを除けば、よくできています。"],"3":["トムは何年ぶりかで初めてその公園を訪れました。","科学の知識は誰にとっても大いに役立ちます。","彼はその知らせを聞いて、喜びで我を忘れていました。","フランクは年齢のわりに若く見えますね。","母親は子どもの腕をつかみました。","私はその本を出版社から直接注文することにしました。","彼の正直さについては疑いの余地がありません。","昨日は60センチほど雪が降ったので、学校は休校になりました。","あなたがここに着くまでには、私たちはその仕事を終えているでしょう。","ビルはとても大きな昼食を食べたので、授業中に眠ってしまいました。","買い物に行くたびに、1つか2つ買い忘れてしまいます。","ちょっとした助言を一つさせてください。","この絵には賞を取る十分な見込みがあります。","祖母がここに座れるように、場所を空けてもらえませんか。","私は方向感覚がないので、すぐに道に迷いました。","私は今何もすることがありません。","コーヒーに砂糖をどれくらい入れますか。角砂糖を2個お願いします。","彼は心地よい声をしていますが、マイクを通すとよく聞こえません。","少年たちは顔に満面の笑みを浮かべて外へ走り出しました。","地震の場合には、外へ急いで出てはいけません。","こんなに美しい赤ちゃんを今まで見たことがありません。","私の目覚まし時計は2つとも今朝鳴りませんでした。","メアリーがなぜそんな大きな間違いをしたのか分かりません。","彼はその問題を簡単に解決することに成功しました。","その知らせを聞いたとき、彼女は言葉を失いました。","会議はその会議に先立って開かれます。","彼は、いわば歩く辞書です。","あなたはこの素晴らしい機会を利用すべきです。","彼は毎朝散歩することを重視しました。","彼女は自分で夕食代を払うと言い張りました。"],"4":["シアトルに滞在している間、私は一生付き合える友人をたくさん作りました。","ロバートは自分が思っているほど偉大な歌手ではありません。","ピーターは、これはかなり安いレストランだと思っています。","彼のものの見方は私のものとはかなり異なります。","ボブは野球の試合には勝ちましたが、準備していたスピーチコンテストではうまくいきませんでした。","いくつか小さな間違いはありますが、これはとてもよい論文です。","彼の論文は完璧にはほど遠いです。","その知らせを聞くと、彼女は大喜びしました。","私の兄は1980年11月18日に生まれました。","椅子はそのままにしておいてください。","力こそ正義だという考えには同意できません。","ほとんどの人は、それを失うまで自分が持っているものの価値を理解しません。","私が家を出るやいなや、激しく雨が降り始めました。","彼は警察官を見るやいなや逃げました。","映画が始まったばかりなのに、停電しました。","まさか再びパリで彼女に会うとは夢にも思いませんでした。","彼はとても疲れ果てていたので、ベッドに倒れ込みました。","あなたの助けがなければ、私はこの課題を終えることができません。","雨がなければ、私たちは試合をしていただろう。","もう寝る時間ですよ。","何が起ころうとも、私はいつもあなたを支えます。","奇妙に思えるかもしれませんが、彼の言ったことは本当です。","若かったにもかかわらず、彼はその問題を何とか解決しました。","彼は裕福ではありますが、決して幸せではありません。","私は彼を大いに尊敬していますが、彼の意見には賛成できません。","彼は健康を損なうほど一生懸命働きました。","彼女にはその申し出を受け入れる以外に選択肢がありませんでした。","彼は私がうそつきだと言うまでに至りました。","健康が富より大切なのは言うまでもありません。","明日何が起こるかは誰にも分かりません。"]};
+const TRANSLATIONS = {
+  "1": [
+    "ケビンの新しいアパートは私のものよりもずっと広いです。",
+    "私の祖母のアップルパイほど美味しいものはありません。",
+    "メグはリリーの2倍の速さで読むことができます。",
+    "窓の隣に座っている男の子は私の兄（弟）です。",
+    "リュックを開けると、教科書が見当たらないことに気づきました。",
+    "デイビッドは若く見えますが、私より3歳年上です。",
+    "その事故は誰かがスピードを出しすぎたことによって引き起こされました。",
+    "今年の歴史の教科書は、昨年使われた本に似ています。",
+    "私は自分が公園のベンチで横になっていることに気づきました。",
+    "トムは海を見渡しながら海岸に立っていました。"
+  ],
+  "2": [
+    "カズはクラスの他のどの男の子よりもイタリア語をうまく話します。",
+    "マーサとキャサリンは姉妹です。マーサの方が2人の中で年上（大きい）です。",
+    "新しいプールは古いプールほど大きくはありませんが、ずっと深いです。",
+    "勉強すればするほど、彼は賢くなりました。",
+    "サンフランシスコの人口は金沢の人口よりも多いです。",
+    "現代美術に詳しくないので、誰がその絵を描いたのか分かりません。",
+    "牛乳が不足しています。少し買ってきてくれませんか。",
+    "その飛行機は9時30分に到着する予定でしたが、2時間遅れました。",
+    "毎日同じことをするのに飽き飽きしていました。",
+    "若い頃、私は人前でスピーチすることに慣れていました。",
+    "ジャックが作ったスパゲッティはとても美味しかったので、皿にはほとんど残りませんでした。",
+    "彼は目を閉じて音楽を聴いていました。",
+    "その宝物は島のどこかに埋められたままになっています。",
+    "肩を負傷していたため、トムはサッカーの試合に参加できませんでした。",
+    "私は妹が先生に叱られているのを見ました。"
+  ],
+  "3": [
+    "ペルーで最も高い山は、富士山のほぼ2倍の高さです。",
+    "このコンピューターを見てください。このモデルは前のモデルより遥かに優れています。",
+    "登山家たちは戻ると予想されていましたが、戻らなかったため、一行の残りの人々は彼らの無事を心配し始めました。",
+    "その学生は学位を取得できないことを恥じていました。",
+    "私たちは皆、彼の上司に対する愚痴にうんざりしています。",
+    "ここから見ると、富士山はとても美しいです。",
+    "そのボクサーは勝つ見込みがないと思って、挑戦を拒否しました。",
+    "ジョンはその地震のニュースにショックを受け、一言も話せませんでした。",
+    "日曜日だったので、銀行は閉まっていました。",
+    "賢く使われないと、テレビは私たちに害を与えることがあります。",
+    "兄と比較すると、彼はそれほど寛大ではありません。",
+    "すべての点を考慮すると、彼は非常に良い仕事をしました。",
+    "平易な英語で書かれているため、その本は初心者に適しています。",
+    "年齢を考慮すると、ブラウン先生はとても若く見えます。",
+    "長い間お待たせして申し訳ありません。"
+  ],
+  "4": [
+    "彼は数学のことをほとんど知りませんし、物理のことはなおさら知りません。",
+    "パソコンの価格は1年で30%も下落しました。",
+    "欠点があるからこそ、私はより一層彼のことが好きです。",
+    "ロンドンに11年間住んでいたので、ユウジはイギリス英語をとても上手に話します。",
+    "以前彼に会ったことがなかったので、私は彼だと分かりませんでした。",
+    "神戸に10年間住んでいたので、ジャックはまるで日本人のように日本語を話します。",
+    "天気が許せば、明日午前中にピクニックに行きましょうか。",
+    "彼は50ドルしか持っていないので、この安い自転車をギリギリ買える程度です。",
+    "彼女は兄に劣らず聡明であり、2人とも本当の天才です。",
+    "彼は昼食にせいぜい50ドルしか使いませんでした。ステーキハウスにしては驚くほど安かったです。",
+    "その候補者には少なくとも1万人の支持者がおり、これは立候補に必要な絶対的な最低条件です。",
+    "列車事故で少なくとも50人の乗客が負傷しました。",
+    "夜が明けてきた（迫ってきた）ので、私たちはホテルを探すことにしました。",
+    "彼が無実であると確信したため、裁判官はすぐにその囚人を釈放しました。",
+    "率直に言って、私はこの件に関するあなたの意見には同意できません。",
+    "訛りから判断すると、彼は国の北部出身に違いありません。",
+    "他の条件が同じであれば、最も簡単な説明が通常は最良のものです。"
+  ]
+};
+  
 let stage=1,score=0,correct=0,total=0,correctStreak=0,wrongStreak=0,timeLeft=90,timerId=null,current=null,accepting=true,mode="normal",decks={},reviewList=[];
 const $=id=>document.getElementById(id);
 const shuffle=a=>[...a].sort(()=>Math.random()-.5);
